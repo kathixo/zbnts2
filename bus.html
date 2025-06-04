@@ -40,7 +40,7 @@
       <!-- Logo and Branding -->
       <a href="home.html" class="flex items-center">
         <img src="images/zbn.jpg" alt="ZBN Logo" class="h-10 w-auto" />
-        <span class="ml-2 font-bold text-xl text-blue-900 dark:text-white">ZBN Tax & Accounting Services</span>
+        <span class="ml-2 font-bold text-xl text-blue-900 dark:text-white"></span>
       </a>
   
       <!-- Navigation Links -->
@@ -74,14 +74,16 @@
       <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
     </svg>
   </button>
-  
-  <div id="servicesDropdown" class="absolute left-0 mt-2 w-60 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg hidden z-50">
-    <a href="tax.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Taxation Services</a>
-    <a href="hr.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Human Resources</a>
-    <a href="bus.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Business Management</a>
-    <a href="payroll.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Payroll Services</a>
-    <a href="acc_ser.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Accounting Services</a>
-    <a href="com_sec.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Company Secretarial</a>
+ <!-- Dropdown -->
+  <div id= "taxdropdown" class="absolute left-0 z-50 hidden group-hover:block bg-white dark:bg-gray-800 shadow-lg mt-2 w-[350px] p-4 rounded-lg">
+   <ul>
+      <a href="company_reg.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Registration of Companies</li>
+      <a href="maintenance_rec.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Maintenance of Statutory Records</li>
+      <a href="submission_annRet.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Submission of Annual Returns</li>
+      <a href="e-Amendments.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">e-Amendments to Directors and Public officers</li>
+      <a href="marketing_plans.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Marketing plans and strategy</li>
+      <a href="business_adv.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Business Advisory</li>
+    </ul>	
   </div>
 </div>
 
@@ -192,101 +194,101 @@
       </div>
     </div>
   </section>
-   <!-- Footer-->
-   <footer class="bg-blue-200 text-gray py-10 mt-16">
-    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
-            <a href="index.html" class="flex items-center">
-                <img src="images/zbn.jpg" alt="ZBN Logo" class="h-10 w-auto" />
-                <span class="ml-2 font-bold text-xl text-gray-800 dark:text-white">ZBN Tax & Accounting</span>
-              </a>
+     <!-- Footer-->
+      <footer class="bg-white-100 text-gray py-10 mt-16">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <a href="index.html" class="flex items-center">
+                    <img src="images/zbn.jpg" alt="ZBN Logo" class="h-10 w-auto" />
+                    <span class="ml-2 font-bold text-xl text-gray-800 dark:text-white"></span>
+                  </a>
+              </div>
+          <!-- Column 1: Quick Links -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Company Services</h3>
+            <ul class="space-y-2">
+              <li><a href="tax.html" class="hover:text-gray-800 hover:underline underline-offset-4">Taxation Services</a></li>
+              <li><a href="hr.html" class="hover:text-gray-800 hover:underline underline-offset-4">Human Resources</a></li>
+              <li><a href="bus.html" class="hover:text-gray-800 hover:underline underline-offset-4">Business Management</a></li>
+              <li><a href="payroll.html" class="hover:text-gray-800 hover:underline underline-offset-4">Payroll Services</li>
+              <li><a href="acc_ser.html" class="hover:text-gray-800 hover:underline underline-offset-4">Accounting Services</a></li>
+              <li><a href="com_sec.html" class="hover:text-gray-800 hover:underline underline-offset-4">Company Secretarial</a></li>
+            </ul>
           </div>
-      <!-- Column 1: Quick Links -->
-      <div>
-        <h3 class="text-xl font-bold mb-4">Company Services</h3>
-        <ul class="space-y-2">
-          <li><a href="tax.html" class="hover:text-gray-800 hover:underline underline-offset-4">Taxation Services</a></li>
-          <li><a href="hr.html" class="hover:text-gray-800 hover:underline underline-offset-4">Human Resources</a></li>
-          <li><a href="bus.html" class="hover:text-gray-800 hover:underline underline-offset-4">Business Management</a></li>
-          <li><a href="payroll.html" class="hover:text-gray-800 hover:underline underline-offset-4">Payroll Services</li>
-          <li><a href="acc_ser.html" class="hover:text-gray-800 hover:underline underline-offset-4">Accounting Services</a></li>
-          <li><a href="com_sec.html" class="hover:text-gray-800 hover:underline underline-offset-4">Company Secretarial</a></li>
-        </ul>
-      </div>
-  
-      <!-- Column 2: Contact Us -->
-      <div>
-        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-        <div class="flex items-start space-x-2">
-          <!-- Location icon -->
-          <svg class="w-5 h-5 text-blue-900 mt-1" fill="none" stroke="currentColor" stroke-width="5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 11.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 11.5C19.5 17.5 12 21 12 21s-7.5-3.5-7.5-9.5a7.5 7.5 0 0 1 15 0z" />
-          </svg>
-          <p>112 King Shaka Street,Stanger Center,Office No.29,KwaDukuza,KZN</p>
+      
+          <!-- Column 2: Contact Us -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+            <div class="flex items-start space-x-2">
+              <!-- Location icon -->
+              <svg class="w-5 h-5 text-blue-900 mt-1" fill="none" stroke="currentColor" stroke-width="5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 11.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 11.5C19.5 17.5 12 21 12 21s-7.5-3.5-7.5-9.5a7.5 7.5 0 0 1 15 0z" />
+              </svg>
+              <p>112 King Shaka Street,Stanger Center,Office No.29,KwaDukuza,KZN</p>
+            </div>
+      
+            <div class="flex items-center space-x-2 mt-3">
+              <!-- Phone icon -->
+              <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 0 1 2-2h2l2 5v3l4 4 3-2 5 2v2a2 2 0 0 1-2 2h-1C10.73 21 3 13.27 3 5v0z" />
+              </svg>
+              <a href="tel:(032) 553 1919" class="underline hover:text-blue-400">(032) 553 1919</a>
+              <a href="tel:(076) 327 4133" class="underline hover:text-blue-400">(076) 327 4133</a>
+            </div>
+      
+            <div class="flex items-center space-x-2 mt-3">
+              <!-- Email icon -->
+              <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 6h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
+              </svg>
+              <a href="mailto:info@zbnts.co.za" class="underline hover:text-blue-400">info@zbnts.co.za</a>
+              <a href="mailto:zbnts@yahoo.com" class="underline hover:text-blue-400">zbnts@yahoo.com</a>
+            </div>
+          </div>
+      
+          <!-- Column 3: Working Hours -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Working Hours</h3>
+            <div class="flex items-center space-x-2">
+              <!-- Clock icon -->
+              <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
+            </div>
+            <div class="flex items-center space-x-2 mt-2">
+              <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>Sunday: Closed</span>
+            </div>
+          </div>
+      
         </div>
-  
-        <div class="flex items-center space-x-2 mt-3">
-          <!-- Phone icon -->
-          <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 0 1 2-2h2l2 5v3l4 4 3-2 5 2v2a2 2 0 0 1-2 2h-1C10.73 21 3 13.27 3 5v0z" />
-          </svg>
-          <a href="tel:(032) 553 1919" class="underline hover:text-blue-400">(032) 553 1919</a>
-          <a href="tel:(076) 327 4133" class="underline hover:text-blue-400">(076) 327 4133</a>
+      
+        <!-- Social Media Links -->
+        <div class="mt-8 text-center">
+          <h3 class="font-semibold text-xl text-blue-900">Follow Us</h3>
+          <div class="flex justify-center space-x-6 mt-4">
+            <a href="https://www.facebook.com/zbnts.co.za?mibextid=ZbWKwL" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/zbn-social-3308bb294/" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/zbntaxaccountingservices/" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
-  
-        <div class="flex items-center space-x-2 mt-3">
-          <!-- Email icon -->
-          <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 6h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
-          </svg>
-          <a href="mailto:info@zbnts.co.za" class="underline hover:text-blue-400">info@zbnts.co.za</a>
-          <a href="mailto:zbnts@yahoo.com" class="underline hover:text-blue-400">zbnts@yahoo.com</a>
+      
+        <div class="mt-8 text-center text-sm text-blue-900">
+          &copy; 2025 Copyright. ZBN Tax and Accounting Services. All rights reserved.
         </div>
-      </div>
-  
-      <!-- Column 3: Working Hours -->
-      <div>
-        <h3 class="text-xl font-bold mb-4">Working Hours</h3>
-        <div class="flex items-center space-x-2">
-          <!-- Clock icon -->
-          <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2" />
-            <circle cx="12" cy="12" r="10" />
-          </svg>
-          <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
-        </div>
-        <div class="flex items-center space-x-2 mt-2">
-          <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2" />
-            <circle cx="12" cy="12" r="10" />
-          </svg>
-          <span>Sunday: Closed</span>
-        </div>
-      </div>
-  
-    </div>
-  
-    <!-- Social Media Links -->
-    <div class="mt-8 text-center">
-      <h3 class="font-semibold text-xl text-blue-900">Follow Us</h3>
-      <div class="flex justify-center space-x-6 mt-4">
-        <a href="https://www.facebook.com/zbnts.co.za?mibextid=ZbWKwL" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/zbn-social-3308bb294/" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/zbntaxaccountingservices/" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-  
-    <div class="mt-8 text-center text-sm text-blue-900">
-      &copy; 2025 Copyright. ZBN Tax and Accounting Services. All rights reserved.
-    </div>
-  </footer>
+      </footer>
 
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>

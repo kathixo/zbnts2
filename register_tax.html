@@ -72,8 +72,19 @@
     <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
     </svg>
-  </button>
- </div>
+   </button>
+ <!-- Dropdown -->
+  <div id= "taxdropdown" class="absolute left-0 z-50 hidden group-hover:block bg-white dark:bg-gray-800 shadow-lg mt-2 w-[350px] p-4 rounded-lg">
+   <ul>
+      <a href="company_reg.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Registration of Companies</li>
+      <a href="maintenance_rec.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Maintenance of Statutory Records</li>
+      <a href="submission_annRet.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Submission of Annual Returns</li>
+      <a href="e-Amendments.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">e-Amendments to Directors and Public officers</li>
+      <a href="marketing_plans.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Marketing plans and strategy</li>
+      <a href="business_adv.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Business Advisory</li>
+    </ul>	
+  </div>
+</div>
 
 <div class="relative group">
   <button onclick="toggleDropdown()" id="servicesBtn" class="hover:underline underline-offset-4 decoration-blue-400 hover:text-blue-800 inline-flex items-center dark:text-white">
@@ -156,13 +167,13 @@
 
         <!-- Card 1 -->
         <div class="bg-blue-100 dark:bg-blue-800 p-6 rounded-lg shadow border border-blue-300 dark:border-blue-600">
-          <h3 class="text-xl font-bold mb-2 text-blue-900 dark:text-white">Tax Clearance</h3>
+          <h3 class="text-xl font-bold mb-2 text-blue-900 dark:text-white">Tax Registration	</h3>
           <ul class="text-sm text-blue-900 dark:text-gray-200 mb-3 space-y-1">
             <li>Tax Clearance Pin Certificate</li>
             <li>Timeframe: 1-Week</li>
           </ul>
           <p class="text-blue-700 dark:text-blue-300 font-semibold mb-3">R790 Once-Off</p>
-          <button onclick="setService('Tax Clearance')" class="bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-500">
+          <button onclick="setService('Tax Registration')" class="bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-500">
             Apply Now
           </button>
         </div>
@@ -182,9 +193,11 @@
 
         <!-- Card 3 -->
         <div class="bg-blue-100 dark:bg-blue-800 p-6 rounded-lg shadow border border-blue-300 dark:border-blue-600">
-          <h3 class="text-xl font-bold mb-2 text-blue-900 dark:text-white">UIF / PAYE / SDL</h3>
+          <h3 class="text-xl font-bold mb-2 text-blue-900 dark:text-white">UIF / PAYE / SDL Registration</h3>
           <ul class="text-sm text-blue-900 dark:text-gray-200 mb-3 space-y-1">
             <li>UIF / PAYE / SDL Number</li>
+            <li>Main Requirements: (1) ID or Passport documents (2) S.A Business Address (3) Business bank Account (4) SARS Registered Representative updated at SARS
+(we can assist)</li>
             <li>Timeframe: 5-Working Days</li>
           </ul>
           <p class="text-blue-700 dark:text-blue-300 font-semibold mb-3">R2290 Once-Off</p>
@@ -244,188 +257,134 @@
       <!-- FAQ Item -->
       <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 transition-all">
         <button class="flex justify-between w-full text-left font-semibold text-lg focus:outline-none toggle-faq">
-          <span>How do I order a service?</span>
+          <span>How do I register for tax with SARS</span>
           <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
         </button>
         <div class="mt-4 hidden text-gray-600 dark:text-gray-300 faq-content">
-          Simply call us at (032) 552 1919 and let our team assist you with the process.
+          We can register you online or via eFiling once your company is registered. You’ll need your company documents and proof of address.
         </div>
       </div>
   
       <!-- FAQ Item -->
       <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 transition-all">
         <button class="flex justify-between w-full text-left font-semibold text-lg focus:outline-none toggle-faq">
-          <span>Where do I send my documents?</span>
+          <span>What happens if I miss a tax deadline?</span>
           <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
         </button>
         <div class="mt-4 hidden text-gray-600 dark:text-gray-300 faq-content">
-          You can attach and email them directly to the address provided for your specific service.
+          SARS may charge penalties and interest. We help with late submissions and penalty mitigation where possible.
         </div>
       </div>
   
       <!-- FAQ Item -->
       <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 transition-all">
         <button class="flex justify-between w-full text-left font-semibold text-lg focus:outline-none toggle-faq">
-          <span>How do I track my service progress?</span>
+          <span>What is Provisonal Tax and who must pay it?</span>
           <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
         </button>
         <div class="mt-4 hidden text-gray-600 dark:text-gray-300 faq-content">
-          We send regular updates via SMS and Email to keep you informed.
+         Provisional Tax is for businesses and individuals who earn income not subject to PAYE. It’s paid twice a year.
         </div>
       </div>
   
-      <!-- FAQ Item -->
-      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 transition-all">
-        <button class="flex justify-between w-full text-left font-semibold text-lg focus:outline-none toggle-faq">
-          <span>How do I know if i need to pay Personal Income Tax</span>
-          <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
-        </button>
-        <div class="mt-4 hidden text-gray-600 dark:text-gray-300 faq-content">
-          All documents are securely sent to you via email.
-        </div>
-      </div>
-      <!-- FAQ Item -->
-    <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
-      <button class="flex justify-between w-full text-left font-semibold text-lg focus:outline-none toggle-faq">
-        <span>How do I get an Income Tax Registration Number</span>
-        <svg class="w-6 h-6 transition-transform transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
-      </button>
-      <div class="mt-4 hidden text-gray-600 dark:text-gray-300 faq-content">
-        <p>To register a company, you must send us:</p>
-        <ul class="list-disc list-inside ml-4 mt-2">
-          <li>Four company name proposals</li>
-          <li>Certified ID copies of directors (minimum of 3 for NPC)</li>
-          <li>Postal and physical proof of address for company and members</li>
-          <li>Email address and cellphone number</li>
-        </ul>
-        <p class="mt-4">Fee: <strong>R950</strong>, which includes:</p>
-        <ul class="list-disc list-inside ml-4 mt-2">
-          <li>Company Certificate</li>
-          <li>Share Certificate</li>
-          <li>Tax Clearance</li>
-          <li>B-BBEE Affidavit</li>
-          <li>CSD Registration (after business bank account)</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- FAQ Item -->
-    <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
-      <button class="flex justify-between w-full text-left font-semibold text-lg focus:outline-none toggle-faq">
-        <span>Do I always need to submit Tax Returns?</span>
-        <svg class="w-6 h-6 transition-transform transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
-      </button>
-      <div class="mt-4 hidden text-gray-600 dark:text-gray-300 faq-content">
-        <p>We offer a wide range of services tailored to your needs:</p>
-        <ul class="list-disc list-inside ml-4 mt-2">
-          <li>Company Registrations</li>
-          <li>Accounting & Tax Services</li>
-          <li>Payroll Processing</li>
-          <li>Human Resources Management</li>
-          <li>Business Management Consulting</li>
-          <li>Company Secretarial Services</li>
-        </ul>
-        <p class="mt-2">Need help getting started? You can always contact us or view our services section for more details.</p>
-      </div>
-    </div>
   </div>
 </section>
 
-   <!-- Footer-->
-   <footer class="bg-blue-200 text-gray py-10 mt-16">
-    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
-            <a href="home.html" class="flex items-center">
-                <img src="images/zbn.jpg" alt="ZBN Logo" class="h-10 w-auto" />
-                <span class="ml-2 font-bold text-xl text-gray-800 dark:text-white">ZBN Tax & Accounting</span>
-              </a>
+  <!-- Footer-->
+      <footer class="bg-white-100 text-gray py-10 mt-16">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <a href="index.html" class="flex items-center">
+                    <img src="images/zbn.jpg" alt="ZBN Logo" class="h-10 w-auto" />
+                    <span class="ml-2 font-bold text-xl text-gray-800 dark:text-white"></span>
+                  </a>
+              </div>
+          <!-- Column 1: Quick Links -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Company Services</h3>
+            <ul class="space-y-2">
+              <li><a href="tax.html" class="hover:text-gray-800 hover:underline underline-offset-4">Taxation Services</a></li>
+              <li><a href="hr.html" class="hover:text-gray-800 hover:underline underline-offset-4">Human Resources</a></li>
+              <li><a href="bus.html" class="hover:text-gray-800 hover:underline underline-offset-4">Business Management</a></li>
+              <li><a href="payroll.html" class="hover:text-gray-800 hover:underline underline-offset-4">Payroll Services</li>
+              <li><a href="acc_ser.html" class="hover:text-gray-800 hover:underline underline-offset-4">Accounting Services</a></li>
+              <li><a href="com_sec.html" class="hover:text-gray-800 hover:underline underline-offset-4">Company Secretarial</a></li>
+            </ul>
           </div>
-      <!-- Column 1: Quick Links -->
-      <div>
-        <h3 class="text-xl font-bold mb-4">Company Services</h3>
-        <ul class="space-y-2">
-          <li><a href="tax.html" class="hover:text-gray-800 hover:underline underline-offset-4">Taxation Services</a></li>
-          <li><a href="hr.html" class="hover:text-gray-800 hover:underline underline-offset-4">Human Resources</a></li>
-          <li><a href="bus.html" class="hover:text-gray-800 hover:underline underline-offset-4">Business Management</a></li>
-          <li><a href="payroll.html" class="hover:text-gray-800 hover:underline underline-offset-4">Payroll Services</li>
-          <li><a href="acc_ser.html" class="hover:text-gray-800 hover:underline underline-offset-4">Accounting Services</a></li>
-          <li><a href="com_sec.html" class="hover:text-gray-800 hover:underline underline-offset-4">Company Secretarial</a></li>
-        </ul>
-      </div>
-  
-      <!-- Column 2: Contact Us -->
-      <div>
-        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-        <div class="flex items-start space-x-2">
-          <!-- Location icon -->
-          <svg class="w-5 h-5 text-blue-900 mt-1" fill="none" stroke="currentColor" stroke-width="5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 11.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 11.5C19.5 17.5 12 21 12 21s-7.5-3.5-7.5-9.5a7.5 7.5 0 0 1 15 0z" />
-          </svg>
-          <p>112 King Shaka Street,Stanger Center,Office No.29,KwaDukuza,KZN</p>
+      
+          <!-- Column 2: Contact Us -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+            <div class="flex items-start space-x-2">
+              <!-- Location icon -->
+              <svg class="w-5 h-5 text-blue-900 mt-1" fill="none" stroke="currentColor" stroke-width="5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 11.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 11.5C19.5 17.5 12 21 12 21s-7.5-3.5-7.5-9.5a7.5 7.5 0 0 1 15 0z" />
+              </svg>
+              <p>112 King Shaka Street,Stanger Center,Office No.29,KwaDukuza,KZN</p>
+            </div>
+      
+            <div class="flex items-center space-x-2 mt-3">
+              <!-- Phone icon -->
+              <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 0 1 2-2h2l2 5v3l4 4 3-2 5 2v2a2 2 0 0 1-2 2h-1C10.73 21 3 13.27 3 5v0z" />
+              </svg>
+              <a href="tel:(032) 553 1919" class="underline hover:text-blue-400">(032) 553 1919</a>
+              <a href="tel:(076) 327 4133" class="underline hover:text-blue-400">(076) 327 4133</a>
+            </div>
+      
+            <div class="flex items-center space-x-2 mt-3">
+              <!-- Email icon -->
+              <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 6h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
+              </svg>
+              <a href="mailto:info@zbnts.co.za" class="underline hover:text-blue-400">info@zbnts.co.za</a>
+              <a href="mailto:zbnts@yahoo.com" class="underline hover:text-blue-400">zbnts@yahoo.com</a>
+            </div>
+          </div>
+      
+          <!-- Column 3: Working Hours -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Working Hours</h3>
+            <div class="flex items-center space-x-2">
+              <!-- Clock icon -->
+              <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
+            </div>
+            <div class="flex items-center space-x-2 mt-2">
+              <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>Sunday: Closed</span>
+            </div>
+          </div>
+      
         </div>
-  
-        <div class="flex items-center space-x-2 mt-3">
-          <!-- Phone icon -->
-          <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 0 1 2-2h2l2 5v3l4 4 3-2 5 2v2a2 2 0 0 1-2 2h-1C10.73 21 3 13.27 3 5v0z" />
-          </svg>
-          <a href="tel:(032) 553 1919" class="underline hover:text-blue-400">(032) 553 1919</a>
-          <a href="tel:(076) 327 4133" class="underline hover:text-blue-400">(076) 327 4133</a>
+      
+        <!-- Social Media Links -->
+        <div class="mt-8 text-center">
+          <h3 class="font-semibold text-xl text-blue-900">Follow Us</h3>
+          <div class="flex justify-center space-x-6 mt-4">
+            <a href="https://www.facebook.com/zbnts.co.za?mibextid=ZbWKwL" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/zbn-social-3308bb294/" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/zbntaxaccountingservices/" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
-  
-        <div class="flex items-center space-x-2 mt-3">
-          <!-- Email icon -->
-          <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 6h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
-          </svg>
-          <a href="mailto:info@zbnts.co.za" class="underline hover:text-blue-400">info@zbnts.co.za</a>
-          <a href="mailto:zbnts@yahoo.com" class="underline hover:text-blue-400">zbnts@yahoo.com</a>
+      
+        <div class="mt-8 text-center text-sm text-blue-900">
+          &copy; 2025 Copyright. ZBN Tax and Accounting Services. All rights reserved.
         </div>
-      </div>
-  
-      <!-- Column 3: Working Hours -->
-      <div>
-        <h3 class="text-xl font-bold mb-4">Working Hours</h3>
-        <div class="flex items-center space-x-2">
-          <!-- Clock icon -->
-          <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2" />
-            <circle cx="12" cy="12" r="10" />
-          </svg>
-          <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
-        </div>
-        <div class="flex items-center space-x-2 mt-2">
-          <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2" />
-            <circle cx="12" cy="12" r="10" />
-          </svg>
-          <span>Sunday: Closed</span>
-        </div>
-      </div>
-  
-    </div>
-  
-    <!-- Social Media Links -->
-    <div class="mt-8 text-center">
-      <h3 class="font-semibold text-xl text-blue-900">Follow Us</h3>
-      <div class="flex justify-center space-x-6 mt-4">
-        <a href="https://www.facebook.com/zbnts.co.za?mibextid=ZbWKwL" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/zbn-social-3308bb294/" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/zbntaxaccountingservices/" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-  
-    <div class="mt-8 text-center text-sm text-blue-900">
-      &copy; 2025 Copyright. ZBN Tax and Accounting Services. All rights reserved.
-    </div>
-  </footer>
+      </footer>
 
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>

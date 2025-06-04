@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZBN Tax & Accounting Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --dark-blue: #003366;
+      --light-blue: #e6f0ff;
+      --grey: #f2f2f2;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .transition-theme {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  </style>
+</head>
+<body class="transition-theme font-sans bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white">
+
+  <!-- Navbar -->
+  <!-- Smooth Scroll -->
+<style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  
+<!-- Navigation Bar -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg shadow-md transition-all">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <!-- Logo and Branding -->
+      <a href="home.html" class="flex items-center">
+        <img src="images/zbn.jpg" alt="ZBN Logo" class="h-10 w-auto" />
+      </a>
+  
+      <!-- Navigation Links -->
+      <nav class="space-x-6 text-lg hidden md:flex items-center">
+        <a href="home.html" class="hover:underline underline-offset-4 decoration-blue-400 hover:text-blue-800 dark:text-blue">Home</a>
+        
+        <a href="home.html#about" class="hover:underline underline-offset-4 decoration-blue-400 hover:text-blue-800 dark:text-white">About</a>
+       <!-- Services Dropdown -->
+<div class="relative">
+  <button onclick="toggleDropdown()" id="servicesBtn" class="hover:underline underline-offset-4 decoration-blue-400 hover:text-blue-800 inline-flex items-center dark:text-white">
+    All Services
+    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  
+  <div id="servicesDropdown" class="absolute left-0 mt-2 w-60 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg hidden z-50">
+    <a href="tax.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Taxation Services</a>
+    <a href="hr.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Human Resources</a>
+    <a href="bus.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Business Management</a>
+    <a href="payroll.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Payroll Services</a>
+    <a href="acc_ser.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Accounting Services</a>
+    <a href="com_sec.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Company Secretarial</a>
+  </div>
+</div>
+
+<div class="relative group">
+  <button onclick="toggleDropdown()" id="servicesBtn" class="hover:underline underline-offset-4 decoration-blue-400 hover:text-blue-800 inline-flex items-center dark:text-white">
+    Company Registrations
+    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+   </button>
+ <!-- Dropdown -->
+  <div id= "taxdropdown" class="absolute left-0 z-50 hidden group-hover:block bg-white dark:bg-gray-800 shadow-lg mt-2 w-[350px] p-4 rounded-lg">
+   <ul>
+      <a href="company_reg.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Registration of Companies</li>
+      <a href="maintenance_rec.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Maintenance of Statutory Records</li>
+      <a href="submission_annRet.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Submission of Annual Returns</li>
+      <a href="e-Amendments.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">e-Amendments to Directors and Public officers</li>
+      <a href="marketing_plans.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Marketing plans and strategy</li>
+      <a href="business_adv.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Business Advisory</li>
+    </ul>	
+  </div>
+</div>
+
+<div class="relative group">
+  <button onclick="toggleDropdown()" id="servicesBtn" class="hover:underline underline-offset-4 decoration-blue-400 hover:text-blue-800 inline-flex items-center dark:text-white">
+    Tax Services
+    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  
+  <!-- Dropdown -->
+  <div id= "taxdropdown" class="absolute left-0 z-50 hidden group-hover:block bg-white dark:bg-gray-800 shadow-lg mt-2 w-[350px] p-4 rounded-lg">
+    <ul>
+      <a href="register_tax.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Registration for Income Tax, VAT, PAYE with SARS</li>
+      <a href="SARS_e-filing.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">SARS E-filing registration for SMMEs & Individuals</li>
+      <a href="tax_clearance.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Application for Tax Clearances (Tender & Good Standing)</li>
+      <a href="tax_audit.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">SARS Tax Audit administration with Auditors</li>
+      <a href="tax_cons.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">General Taxation Consulting</li>
+      <a href="process_taxpay.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Process Tax payment instructions via E-filing</li>
+      <a href="SMMEs_tax.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">SMMEs Taxation awareness workshops</li>
+      <a href="payroll_sub.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Payroll Submissions (EMP201s) - PAYE, UIF, SDL</li>
+    </ul>	
+    </div>
+  </div>
+  
+        <a href="#faq" class="hover:underline underline-offset-4 decoration-blue-400 hover:text-blue-800 dark:text-white">FAQ</a>
+        <a href="#contact" class="hover:underline underline-offset-4 decoration-blue-400 hover:text-blue-800 dark:text-white">Contact</a>
+        
+      </nav>
+  
+      <!-- Theme Toggle & Consultation Button -->
+      <div class="flex items-center gap-4">
+        <a href="#contact" class="bg-blue-300 hover:bg-blue-600 text-black px-4 py-2 rounded-full text-sm font-medium">Consultation</a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Padding below navbar to prevent content being hidden -->
+  <div class="pt-24"></div>
+
+  <!-- Hero -->
+  <section id="home" class="relative h-screen flex items-center justify-center text-center">
+    <!-- Background Image -->
+    <img src="images/about.jpg" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover opacity-90 z-0">
+  
+    <!-- Overlay for contrast -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/90 z-10"></div>
+  
+    <!-- Centered Content -->
+    <div class="relative z-20 max-w-3xl px-6">
+      <h1 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg mb-6">
+       Process Tax payment instructions via E-filing
+      </h1>
+      <p class="text-lg text-white mb-8 drop-shadow-md">
+       We handle the secure and accurate submission of your tax payment instructions on SARS eFiling, ensuring compliance and peace of mind.
+      </p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="#services" class="bg-blue-900 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-full shadow-md transition duration-300">
+          More Info
+        </a>
+      </div>
+    </div>
+  </section>
+
+<section class="py-12 bg-white dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <!-- HEADING -->
+    <h2 class="text-3xl font-bold text-center text-dark-blue-900 mb-8">
+        Process Tax payment instructions via E-filing
+    </h2>
+
+<section class="bg-white dark:bg-gray-900 py-16 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 items-start">
+
+    <!-- LEFT: TAX SERVICES GRID -->
+    <div class="md:col-span-2 space-y-6">
+      <h2 class="text-3xl font-bold text-dark-blue-900 dark:text-white mb-6">Process Tax payment instructions via E-filing</h2>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+
+        <!-- Card 1 -->
+        <div class="bg-blue-100 dark:bg-blue-800 p-6 rounded-lg shadow border border-blue-300 dark:border-blue-600">
+          <h3 class="text-xl font-bold mb-2 text-blue-900 dark:text-white">Process Tax payment instructions via E-filing</h3>
+          <ul class="text-sm text-blue-900 dark:text-gray-200 mb-3 space-y-1">
+            <li>•SARS eFiling profile access (or signed authorization for us to file on your behalf)
+	        <li>•Relevant tax type and amount due</li>
+	        <li>•Company or individual tax reference number</li>
+	        <li>•Proof of payment (if already paid manually)</li>
+            <li>Timeframe: 1-Week</li>
+          </ul>
+          <p class="text-blue-700 dark:text-blue-300 font-semibold mb-3">R790 Once-Off</p>
+          <button onclick="setService('Process Tax payment instructions via E-filing')" class="bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-500">
+            Apply Now
+          </button>
+        </div>
+
+       
+
+      </div>
+    </div>
+
+    <!-- RIGHT: REGISTER FORM -->
+    <div class="bg-blue-500 dark:bg-blue-900 p-6 rounded-lg shadow border border-blue-300 dark:border-blue-600 w-full">
+      <h3 class="text-xl font-bold mb-4 text-white-900 dark:text-white">Register Now</h3>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-white-800 dark:text-gray-200 mb-1">Full Name</label>
+          <input type="text" class="w-full p-2 rounded border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white" required>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-white-800 dark:text-gray-200 mb-1">Email</label>
+          <input type="email" class="w-full p-2 rounded border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white" required>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-white-800 dark:text-gray-200 mb-1">Phone</label>
+          <input type="text" class="w-full p-2 rounded border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white" required>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-white-800 dark:text-gray-200 mb-1">Service</label>
+          <input id="selectedService" type="text" readonly class="w-full p-2 rounded border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white" placeholder="Select a service">
+        </div>
+        <button type="submit" class="bg-blue-600 text-blue py-2 px-4 rounded hover:bg-blue-500 w-full">
+          Submit Registration
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- Script to auto-fill selected service -->
+<script>
+  function setService(service) {
+    document.getElementById('selectedService').value = service;
+    window.scrollTo({ top: document.getElementById('selectedService').offsetTop - 100, behavior: 'smooth' });
+  }
+</script>
+
+<!-- FAQ -->
+  <section id="faq" class="py-20 px-6 bg-gray-100 dark:bg-gray-800 text-blue-800 dark:text-white">
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+      <p class="text-gray-600 dark:text-gray-300">Find answers to common questions about our services and process.</p>
+    </div>
+  
+    <div class="max-w-3xl mx-auto space-y-4">
+      <!-- FAQ Item -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 transition-all">
+        <button class="flex justify-between w-full text-left font-semibold text-lg focus:outline-none toggle-faq">
+          <span>How do I order a service?</span>
+          <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+        </button>
+        <div class="mt-4 hidden text-gray-600 dark:text-gray-300 faq-content">
+          Simply call us at (032) 552 1919 and let our team assist you with the process.
+        </div>
+      </div>
+  
+      <!-- FAQ Item -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 transition-all">
+        <button class="flex justify-between w-full text-left font-semibold text-lg focus:outline-none toggle-faq">
+          <span>Where do I send my documents?</span>
+          <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+        </button>
+        <div class="mt-4 hidden text-gray-600 dark:text-gray-300 faq-content">
+          You can attach and email them directly to the address provided for your specific service.
+        </div>
+      </div>
+  
+      <!-- FAQ Item -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 transition-all">
+        <button class="flex justify-between w-full text-left font-semibold text-lg focus:outline-none toggle-faq">
+          <span>How do I track my service progress?</span>
+          <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+        </button>
+        <div class="mt-4 hidden text-gray-600 dark:text-gray-300 faq-content">
+          We send regular updates via SMS and Email to keep you informed.
+        </div>
+      </div>
+  
+      <!-- FAQ Item -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 transition-all">
+        <button class="flex justify-between w-full text-left font-semibold text-lg focus:outline-none toggle-faq">
+          <span>How do I know if i need to pay Personal Income Tax</span>
+          <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+        </button>
+        <div class="mt-4 hidden text-gray-600 dark:text-gray-300 faq-content">
+          All documents are securely sent to you via email.
+        </div>
+      </div>
+      <!-- FAQ Item -->
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
+      <button class="flex justify-between w-full text-left font-semibold text-lg focus:outline-none toggle-faq">
+        <span>How do I get an Income Tax Registration Number</span>
+        <svg class="w-6 h-6 transition-transform transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+      </button>
+      <div class="mt-4 hidden text-gray-600 dark:text-gray-300 faq-content">
+        <p>To register a company, you must send us:</p>
+        <ul class="list-disc list-inside ml-4 mt-2">
+          <li>Four company name proposals</li>
+          <li>Certified ID copies of directors (minimum of 3 for NPC)</li>
+          <li>Postal and physical proof of address for company and members</li>
+          <li>Email address and cellphone number</li>
+        </ul>
+        <p class="mt-4">Fee: <strong>R950</strong>, which includes:</p>
+        <ul class="list-disc list-inside ml-4 mt-2">
+          <li>Company Certificate</li>
+          <li>Share Certificate</li>
+          <li>Tax Clearance</li>
+          <li>B-BBEE Affidavit</li>
+          <li>CSD Registration (after business bank account)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
+      <button class="flex justify-between w-full text-left font-semibold text-lg focus:outline-none toggle-faq">
+        <span>Do I always need to submit Tax Returns?</span>
+        <svg class="w-6 h-6 transition-transform transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+      </button>
+      <div class="mt-4 hidden text-gray-600 dark:text-gray-300 faq-content">
+        <p>We offer a wide range of services tailored to your needs:</p>
+        <ul class="list-disc list-inside ml-4 mt-2">
+          <li>Company Registrations</li>
+          <li>Accounting & Tax Services</li>
+          <li>Payroll Processing</li>
+          <li>Human Resources Management</li>
+          <li>Business Management Consulting</li>
+          <li>Company Secretarial Services</li>
+        </ul>
+        <p class="mt-2">Need help getting started? You can always contact us or view our services section for more details.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer-->
+      <footer class="bg-white-100 text-gray py-10 mt-16">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <a href="index.html" class="flex items-center">
+                    <img src="images/zbn.jpg" alt="ZBN Logo" class="h-10 w-auto" />
+                    <span class="ml-2 font-bold text-xl text-gray-800 dark:text-white"></span>
+                  </a>
+              </div>
+          <!-- Column 1: Quick Links -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Company Services</h3>
+            <ul class="space-y-2">
+              <li><a href="tax.html" class="hover:text-gray-800 hover:underline underline-offset-4">Taxation Services</a></li>
+              <li><a href="hr.html" class="hover:text-gray-800 hover:underline underline-offset-4">Human Resources</a></li>
+              <li><a href="bus.html" class="hover:text-gray-800 hover:underline underline-offset-4">Business Management</a></li>
+              <li><a href="payroll.html" class="hover:text-gray-800 hover:underline underline-offset-4">Payroll Services</li>
+              <li><a href="acc_ser.html" class="hover:text-gray-800 hover:underline underline-offset-4">Accounting Services</a></li>
+              <li><a href="com_sec.html" class="hover:text-gray-800 hover:underline underline-offset-4">Company Secretarial</a></li>
+            </ul>
+          </div>
+      
+          <!-- Column 2: Contact Us -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+            <div class="flex items-start space-x-2">
+              <!-- Location icon -->
+              <svg class="w-5 h-5 text-blue-900 mt-1" fill="none" stroke="currentColor" stroke-width="5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 11.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 11.5C19.5 17.5 12 21 12 21s-7.5-3.5-7.5-9.5a7.5 7.5 0 0 1 15 0z" />
+              </svg>
+              <p>112 King Shaka Street,Stanger Center,Office No.29,KwaDukuza,KZN</p>
+            </div>
+      
+            <div class="flex items-center space-x-2 mt-3">
+              <!-- Phone icon -->
+              <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 0 1 2-2h2l2 5v3l4 4 3-2 5 2v2a2 2 0 0 1-2 2h-1C10.73 21 3 13.27 3 5v0z" />
+              </svg>
+              <a href="tel:(032) 553 1919" class="underline hover:text-blue-400">(032) 553 1919</a>
+              <a href="tel:(076) 327 4133" class="underline hover:text-blue-400">(076) 327 4133</a>
+            </div>
+      
+            <div class="flex items-center space-x-2 mt-3">
+              <!-- Email icon -->
+              <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 6h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
+              </svg>
+              <a href="mailto:info@zbnts.co.za" class="underline hover:text-blue-400">info@zbnts.co.za</a>
+              <a href="mailto:zbnts@yahoo.com" class="underline hover:text-blue-400">zbnts@yahoo.com</a>
+            </div>
+          </div>
+      
+          <!-- Column 3: Working Hours -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Working Hours</h3>
+            <div class="flex items-center space-x-2">
+              <!-- Clock icon -->
+              <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
+            </div>
+            <div class="flex items-center space-x-2 mt-2">
+              <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>Sunday: Closed</span>
+            </div>
+          </div>
+      
+        </div>
+      
+        <!-- Social Media Links -->
+        <div class="mt-8 text-center">
+          <h3 class="font-semibold text-xl text-blue-900">Follow Us</h3>
+          <div class="flex justify-center space-x-6 mt-4">
+            <a href="https://www.facebook.com/zbnts.co.za?mibextid=ZbWKwL" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/zbn-social-3308bb294/" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/zbntaxaccountingservices/" target="_blank" class="text-blue-900 hover:text-blue-400 text-2xl">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      
+        <div class="mt-8 text-center text-sm text-blue-900">
+          &copy; 2025 Copyright. ZBN Tax and Accounting Services. All rights reserved.
+        </div>
+      </footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+
+const toggle = document.getElementById('toggle-theme');
+toggle.addEventListener('click', () => {
+  const html = document.documentElement;
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+});
+
+// Smart sticky nav
+let lastScrollTop = 0;
+const navbar = document.getElementById("navbar");
+window.addEventListener("scroll", function () {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  navbar.style.top = scrollTop > lastScrollTop ? "-100px" : "0";
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+}, false);
+</script>
+<script>
+const form = document.getElementById('contactForm');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+
+const nameError = document.getElementById('nameError');
+const emailError = document.getElementById('emailError');
+const messageError = document.getElementById('messageError');
+const successMsg = document.getElementById('formSuccess');
+
+function validateEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  let valid = true;
+  nameError.classList.add('hidden');
+  emailError.classList.add('hidden');
+  messageError.classList.add('hidden');
+  successMsg.classList.add('hidden');
+
+  if (nameInput.value.trim() === '') {
+    nameError.classList.remove('hidden');
+    valid = false;
+  }
+
+  if (!validateEmail(emailInput.value)) {
+    emailError.classList.remove('hidden');
+    valid = false;
+  }
+
+  if (messageInput.value.trim() === '') {
+    messageError.classList.remove('hidden');
+    valid = false;
+  }
+
+  if (valid) {
+    // Simulate form submission
+    successMsg.classList.remove('hidden');
+    form.reset();
+  }
+});
+</script>
+<!-- Floating Call Button -->
+<button id="helpToggle" class="fixed bottom-6 right-6 bg-blue-900 text-white px-4 py-3 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none">
+Need Help?
+</button>
+
+<!-- Call Popup Box -->
+<div id="callBox" class="hidden fixed bottom-20 right-6 bg-white border border-gray-300 rounded-lg shadow-lg p-4 z-50 w-64">
+<p class="text-gray-800 mb-2">Need assistance?</p>
+<a href="tel:+1234567890" class="block w-full bg-blue-400 text-white text-center px-4 py-2 rounded hover:bg-green-700">
+  Call Now: (032) 553 1919
+</a>
+</div>
+<script>
+const helpToggle = document.getElementById('helpToggle');
+const callBox = document.getElementById('callBox');
+
+helpToggle.addEventListener('click', () => {
+  callBox.classList.toggle('hidden');
+});
+
+// Optional: Click outside to close
+window.addEventListener('click', function (e) {
+  if (!callBox.contains(e.target) && !helpToggle.contains(e.target)) {
+    callBox.classList.add('hidden');
+  }
+});
+</script>
+<script>
+const slider = document.getElementById("testimonialSlider");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+let currentIndex = 0;
+
+function updateSlider() {
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + 3) % 3;
+  updateSlider();
+});
+
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % 3;
+  updateSlider();
+});
+</script>
+<script>
+  function toggleDropdown() {
+    const dropdown = document.getElementById("servicesDropdown");
+    dropdown.classList.toggle("hidden");
+  }
+
+  // Close dropdown if clicking outside
+  window.addEventListener("click", function (e) {
+    const dropdown = document.getElementById("servicesDropdown");
+    const button = document.getElementById("servicesBtn");
+
+    if (!dropdown.contains(e.target) && !button.contains(e.target)) {
+      dropdown.classList.add("hidden");
+    }
+  });
+  document.getElementById("servicesDropdown").addEventListener("mouseenter", () => {
+    document.getElementById("servicesDropdown").classList.remove("hidden");
+    });
+</script>
+<!-- Service Modal Template -->
+<div id="serviceModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-6 max-w-lg w-full relative">
+  <button id="closeModal" class="absolute top-3 right-4 text-gray-600 dark:text-gray-300 text-2xl hover:text-red-500">&times;</button>
+  <h3 id="modalTitle" class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Service Title</h3>
+  <p id="modalContent" class="text-gray-700 dark:text-gray-300">Detailed description goes here...</p>
+</div>
+</div>
+</body>
+</html>
