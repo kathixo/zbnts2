@@ -113,6 +113,26 @@
     </div>
   </div>
 </header>
+<script>
+function toggleDropdown(id) {
+  document.querySelectorAll('.dropdown').forEach(drop => {
+    if (drop.id === id) {
+      drop.classList.toggle('hidden'); // toggle this dropdown
+    } else {
+      drop.classList.add('hidden');    // hide all others
+    }
+  });
+}
+
+// Close dropdowns when clicking outside any dropdown or button
+window.addEventListener('click', function(e) {
+  if (!e.target.closest('button') && !e.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown').forEach(drop => {
+      drop.classList.add('hidden');
+    });
+  }
+});
+</script>  
   
   <!-- Padding below navbar to prevent content being hidden -->
   <div class="pt-24"></div>

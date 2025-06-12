@@ -33,7 +33,7 @@
     }
   </style>
   
- <!-- Navigation Bar -->
+<!-- Navigation Bar -->
 <header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg shadow-md transition-all">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
     
@@ -56,7 +56,7 @@
           </svg>
         </button>
         <div class="absolute left-0 mt-2 w-60 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg hidden group-hover:block z-50">
-          <a href="tax.html" class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 text-gray-700 hover:text-blue-800 hover:underline">Taxation Services</a>
+          <a href="tax.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Taxation Services</a>
           <a href="hr.html" class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 text-gray-700 hover:text-blue-800 hover:underline">Human Resources</a>
           <a href="bus.html" class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 text-gray-700 hover:text-blue-800 hover:underline">Business Management</a>
           <a href="payroll.html" class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 text-gray-700 hover:text-blue-800 hover:underline">Payroll Services</a>
@@ -113,7 +113,28 @@
     </div>
   </div>
 </header>
-  
+
+<script>
+function toggleDropdown(id) {
+  document.querySelectorAll('.dropdown').forEach(drop => {
+    if (drop.id === id) {
+      drop.classList.toggle('hidden'); // toggle this dropdown
+    } else {
+      drop.classList.add('hidden');    // hide all others
+    }
+  });
+}
+
+// Close dropdowns when clicking outside any dropdown or button
+window.addEventListener('click', function(e) {
+  if (!e.target.closest('button') && !e.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown').forEach(drop => {
+      drop.classList.add('hidden');
+    });
+  }
+});
+</script>  
+
   <!-- Padding below navbar to prevent content being hidden -->
   <div class="pt-24"></div>
 
@@ -160,7 +181,6 @@
           <h3 class="font-semibold text-xl mb-2">Taxation Services</h3>
           <p class="text-gray-600 dark:text-gray-300">From bookkeeping to tax-ready reports, we handle your finances with precision.</p>
         </div>
-        <a href="tax.html" class="mt-4 inline-block text-blue-600 dark:text-yellow-400 font-semibond hover:underline">See more &rarr;</a>
       </div>
       </div>
   
@@ -171,7 +191,6 @@
           <h3 class="font-semibold text-xl mb-2">Human Resources</h3>
           <p class="text-gray-600 dark:text-gray-300">Accurate, on-time payroll for teams of any size—monthly, weekly, or ad hoc.</p>
         </div>
-        <a href="hr.html" class="mt-4 inline-block text-blue-600 dark:text-yellow-400 font-semibond hover:underline">See more &rarr;</a>
       </div>
       </div>
   
@@ -182,8 +201,6 @@
           <h3 class="font-semibold text-xl mb-2">Business Management</h3>
           <p class="text-gray-600 dark:text-gray-300">We manage your SARS submissions, compliance, and help minimize liabilities.</p>
         </div>
-        <a href="bus.html" class="mt-4 inline-block text-blue-600 dark:text-yellow-400 font-semibond hover:underline">See more &rarr;</a>
-      </div>
       </div>
   
       <div class="bg-gray-100 dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
@@ -193,7 +210,6 @@
           <h3 class="font-semibold text-xl mb-2">Payroll Services</h3>
           <p class="text-gray-600 dark:text-gray-300">Register your company, get your CIPC docs, and stay compliant from day one.</p>
         </div>
-        <a href="payroll.html" class="mt-4 inline-block text-blue-600 dark:text-yellow-400 font-semibond hover:underline">See more &rarr;</a>
       </div>
       </div>
   
@@ -204,7 +220,6 @@
           <h3 class="font-semibold text-xl mb-2">Accounting Services</h3>
           <p class="text-gray-600 dark:text-gray-300">We assess and correct your SARS and financial compliance proactively.</p>
         </div>
-        <a href="acc_ser.html" class="mt-4 inline-block text-blue-600 dark:text-yellow-400 font-semibond hover:underline">See more &rarr;</a>
       </div>
       </div>
   
@@ -215,7 +230,6 @@
           <h3 class="font-semibold text-xl mb-2">Company Secretarial</h3>
           <p class="text-gray-600 dark:text-gray-300">Expert guidance on budgeting, forecasting, and growing your financial health.</p>
         </div>
-        <a href="com_sec.html" class="mt-4 inline-block text-blue-600 dark:text-yellow-400 font-semibond hover:underline">See more &rarr;</a>
       </div>
     </div>
   </section>

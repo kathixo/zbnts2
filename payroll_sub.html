@@ -56,7 +56,7 @@
           </svg>
         </button>
         <div class="absolute left-0 mt-2 w-60 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg hidden group-hover:block z-50">
-          <a href="tax.html" class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 text-gray-700 hover:text-blue-800 hover:underline">Taxation Services</a>
+          <a href="tax.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-800 hover:underline underline-offset-4 decoration-blue-400">Taxation Services</a>
           <a href="hr.html" class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 text-gray-700 hover:text-blue-800 hover:underline">Human Resources</a>
           <a href="bus.html" class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 text-gray-700 hover:text-blue-800 hover:underline">Business Management</a>
           <a href="payroll.html" class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 text-gray-700 hover:text-blue-800 hover:underline">Payroll Services</a>
@@ -113,6 +113,27 @@
     </div>
   </div>
 </header>
+
+<script>
+function toggleDropdown(id) {
+  document.querySelectorAll('.dropdown').forEach(drop => {
+    if (drop.id === id) {
+      drop.classList.toggle('hidden'); // toggle this dropdown
+    } else {
+      drop.classList.add('hidden');    // hide all others
+    }
+  });
+}
+
+// Close dropdowns when clicking outside any dropdown or button
+window.addEventListener('click', function(e) {
+  if (!e.target.closest('button') && !e.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown').forEach(drop => {
+      drop.classList.add('hidden');
+    });
+  }
+});
+</script>  
   
   <!-- Padding below navbar to prevent content being hidden -->
   <div class="pt-24"></div>

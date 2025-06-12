@@ -539,6 +539,26 @@ nextBtn.addEventListener("click", () => {
     document.getElementById("servicesDropdown").classList.remove("hidden");
     });
 </script>
+<script>
+function toggleDropdown(id) {
+  document.querySelectorAll('.dropdown').forEach(drop => {
+    if (drop.id === id) {
+      drop.classList.toggle('hidden'); // toggle this dropdown
+    } else {
+      drop.classList.add('hidden');    // hide all others
+    }
+  });
+}
+
+// Close dropdowns when clicking outside any dropdown or button
+window.addEventListener('click', function(e) {
+  if (!e.target.closest('button') && !e.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown').forEach(drop => {
+      drop.classList.add('hidden');
+    });
+  }
+});
+</script>  
 <!-- Service Modal Template -->
 <div id="serviceModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-6 max-w-lg w-full relative">
